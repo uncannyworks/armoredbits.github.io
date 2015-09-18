@@ -1,0 +1,136 @@
+body {
+  font-family: 'chunkfiveroman';
+	margin: 0;
+	background: black;
+	background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../images/displays/robots.jpg');
+  margin: 2em;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  color: white;
+}
+
+#navigation {
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    margin: 1em;
+    padding: 0;
+}
+
+#navigation > li {
+    display: inline;
+    padding: 0.3em;
+}
+
+#navigation > li > a {
+    text-decoration: none;
+}
+
+#navigation > li > a:hover {
+    color: gray;
+}
+
+.active > a {
+    color: orange;
+}
+
+.icon-github {
+	width: 64px;
+	height: 64px;
+	background-image: url('../images/icons/github.png');
+}
+
+.icon-github:hover {
+	width: 64px;
+	height: 64px;
+	background-image: url('../images/icons/github-white.png');
+}
+
+.icon-twitter {
+	width: 64px;
+	height: 64px;
+	background-image: url('../images/icons/twitter.png');
+}
+
+.icon-twitter:hover {
+	width: 64px;
+	height: 64px;
+	background: url('../images/icons/twitter-white.png');
+}
+
+#main-view {
+	min-height: 85vh;	
+  margin: 2em;
+}
+
+hr {
+	border-top: 1px solid orange;
+}
+
+.armored-bits {
+  color: orange;
+  font-size: 70pt;
+  text-shadow: 3px 2px 3px black;
+}
+
+.in-development {
+  color: orange;
+  font-size: 30pt;
+  text-shadow: 3px 2px 3px black;
+}
+
+.game-points {
+  color: orange;
+  font-size: 20pt;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.mail-form {
+  margin: auto 0;
+  margin-top: 20vh;
+  bottom: 10%;
+  color: orange;
+  font-size: 12pt;
+  text-align: center;
+}
+
+.blurb {
+  color: white;
+  font-size: 15pt;
+}
+
+.question-block {
+    padding: 1em;
+}
+
+.question-q {
+    padding: 0.3em;
+}
+
+.question-a {
+    padding-left: 1em;
+}
+
+a {
+    color: white;
+}
+
+input {
+    font-family: 'chunkfiveroman';
+    background-color: white;
+    color: orange;
+    padding: 0.2em;
+    border: 0px solid;
+    font-size: 1.2em;
+}
