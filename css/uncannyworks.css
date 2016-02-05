@@ -1,35 +1,21 @@
 body {
-  font-family: 'chunkfiveroman';
+  font-family: Calibri, Tahoma, Sans Serif;
 	margin: 0;
 	background: black;
-	background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.0),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url('../images/displays/robots.jpg');
+  color: white;
+	background: url('../images/displays/robots.jpg');
   background-size: cover;
   margin: 2em;
 }
 
-#footer {
-  position: fixed;
-  bottom: 0;
-  right: 1em;
-  color: white;
-}
-
 #navigation {
-    position: absolute;
-    right: 0;
     list-style-type: none;
-    margin: 1em;
-    padding: 0;
+    text-align: center;
 }
 
 #navigation > li {
     display: inline;
-    padding: 0.3em;
+    padding: 1em;
 }
 
 #navigation > li > a {
@@ -37,11 +23,11 @@ body {
 }
 
 #navigation > li > a:hover {
-    color: gray;
+    color: lightblue;
 }
 
 .active > a {
-    color: orange;
+    color: #F67F00;
 }
 
 .icon-github {
@@ -73,42 +59,79 @@ body {
   margin: 2em;
 }
 
+#main-content {
+    float: left;
+    width: 70%;
+}
+
+#side-content {
+    float: right;
+    width: 25%;
+    padding: 0.5em;
+}
+
+#mail {
+    text-align: center;
+}
+
+#mail input {
+    background-color: white;
+    color: #F67F00;
+    padding: 0.2em;
+    border: 0px solid;
+    font-size: 1.1em;
+}
+
+#footer {
+    clear: both;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
+
 hr {
 	border-top: 1px solid orange;
 }
 
-.armored-bits {
-  color: orange;
-  font-size: 70pt;
-  text-shadow: 3px 2px 3px black;
-}
-
-.in-development {
-  color: orange;
-  font-size: 30pt;
-  text-shadow: 3px 2px 3px black;
-}
-
-.game-points {
-  color: orange;
-  font-size: 20pt;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1em;
-}
-
-.mail-form {
-  color: orange;
-  font-size: 12pt;
+h1, h2, h3, h4 {
+  color: #F67F00;
+  margin: 0px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.armored-bits {
+  color: #09D4FF;
+  font-size: 50pt;
+  font-weight: bold;
+  text-align: center;
   padding: 0.5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+}
+
+.content {
+  font-size: 20pt;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  margin: 1em;
+}
+
+.payment {
+    background: linear-gradient(orange, #F67F00);
+    color: white;
+    padding: 0.2em;
+    margin: 0.2em;
+    font-size: 0.7em;
 }
 
 .blurb {
   color: white;
   font-size: 15pt;
+}
+
+.side {
+    margin: 1em;
+    padding: 1em;
+    background-color: black;
+    border: 1px solid #F67F00;
 }
 
 .question-block {
@@ -124,14 +147,5 @@ hr {
 }
 
 a {
-    color: white;
-}
-
-input {
-    font-family: 'chunkfiveroman';
-    background-color: white;
-    color: orange;
-    padding: 0.2em;
-    border: 0px solid;
-    font-size: 1.2em;
+    color: #09D4FF;
 }
