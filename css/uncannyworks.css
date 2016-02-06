@@ -3,8 +3,8 @@ body {
 	margin: 0;
 	background: black;
   color: white;
-	background: url('../images/displays/robots.jpg');
-  background-size: cover;
+	background: black url('../images/displays/robots.jpg');
+  background-size: contain;
   margin: 2em;
 }
 
@@ -154,6 +154,7 @@ blockquote {
 }
 
 .question-q {
+    color: #F67F00;
     padding: 0.3em;
 }
 

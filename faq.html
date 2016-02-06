@@ -11,56 +11,47 @@
   <link rel="stylesheet" href="css/font.css" type="text/css" charset="utf-8" />
 </head>
 <body>
-  <ul id="navigation">
-    <li><a href="index.html">Home</a></li>
-    <li class="active"><a href="faq.html">FAQ</a></li>
-    <li><a href="https://www.reddit.com/r/armoredbits/" target="_blank">Reddit</a></li>
-    <li><a href="http://blog.uncannyworks.com" target="_blank">Blog</a></li>
-    <li><a href="https://twitter.com/uncannyworks" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-		<li><a href="https://www.facebook.com/pages/Uncanny-Works-LLC/804720946235665" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-  </ul>
 	<div id="main-view">
-    <div class="armored-bits">Armored Bits</div>
-    <div class="in-development">In Development</div>
-    <div class="game-points">
+    <div class="content">
+      <ul id="navigation">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="http://blog.uncannyworks.com" target="_blank">Blog</a></li>
+        <li><a href="https://www.reddit.com/r/armoredbits/" target="_blank">Community</a></li>
+      </ul>
+      <div class="armored-bits">Armored Bits</div>
       <div class="question-block">
-        <div class="question-q">Q. Programmer recruitment?</div>
-        <div class="question-a blurb">A. We would really like to use this platform to help people gain recognition and employment.  We see this not only as a game to be played, but as a way for people to prove that they have the coding chops it takes to write high level code.</div>
-        <div class="question-q">Q. What is the core concept?</div>
-        <div class="question-a blurb">A. Armored Bits is a programmable online multiplayer robot battle simulator.  Players program the logic to drive their war machine, including things like configuring it pre-match, communicating with teammates via player-defined protocols, and optimally finding, locking onto, and destroying their enemies.</div>
-        <div class="question-q">Q. War Machine?</div>
-        <div class="question-a blurb">A. An AI controlled robot, called mechs or similar in other games.</div>
-        <div class="question-q">Q. Who is Uncanny Works?</div>
-        <div class="question-a blurb">A. We are a small two man independent game development team outside of Osaka, Japan.</div>
-        <div class="question-q">Q. What programming languages will I be able to program in?</div>
-        <div class="question-a blurb">A. Hopefully any language you possibly could! Our API communicates with protocol buffers over TCP, and we plan on creating and endorsing SDKs for every language people wish to interact with our system with.</div>
-        <div class="question-q">Q. What is the actual server written in?</div>
-        <div class="question-a blurb">A. We are writing the realtime backend game server component in Haskell.</div>
-        <div class="question-q">Q. What will the visual client be written in?</div>
-        <div class="question-a blurb">A. We will utilize Unity3d since we have a lot of prior experience with it.</div>
-        <div class="question-q">Q. I've never programmed before.  Will there be tutorials?</div>
-        <div class="question-a blurb">A. One of our primary goals is to help people new to programming learn everything they need to know in order to play our game.  Not only do we plan on writing first class documentation, but we'd like to include as many tutorials and guides as possible for as many languages as we can.</div>
-        <div class="question-q">Q. How will you stop people from cheating?</div>
-        <div class="question-a blurb">A. Player code will be executed inside CPU and memory constrained containers on our own server infrastructure.  Outside world communication will be disabled.  These containers (called <em>Slugs</em>) only allow communication with the core game server running the game instance itself.</div>
-        <div class="question-q">Q. How many players in the same game?</div>
-        <div class="question-a blurb">A. Currently we plan on trying 5v5 battles to see how it goes.  We could very easily increase or decrease this number over time.</div>
-        <div class="question-q">Q. Which game modes will be available?</div>
-        <div class="question-a blurb">A. The first official game mode will be Team Deathmatch.  Future versions will include Capture the Objective, Defend & Destroy, Deahtmatch, Arena, Duels, and whatever else we dream of.</div>
-        <div class="question-q">Q. What kind of ranked play system will be in place?</div>
-        <div class="question-a blurb">A. Assuming we attract a large enough player base, we'd really like to put an ELO-like ranking system in place for people interested in doing ranked competitive play.  Players would then compete for places in standard ladder style leagues, such as Bronze, Silver, Gold, etc.</div>
-        <div class="question-q">Q. Will there be clans/teams?</div>
-        <div class="question-a blurb">A. We would definitely like to allow players to create their own teams.</div>
-        <div class="question-q">Q. What does the game client let me do?</div>
-        <div class="question-a blurb">A. Initially the client will strictly be a game viewer so players can watch their matches in realtime.  We would also like to add a robot customization tester, a local game simulator for sandbox testing, and community features such as chat and forums.</div>
+          <div class="question-q">Q. What is the core concept?</div>
+          <div class="question-a blurb">A. Armored Bits is a programmable online multiplayer robot battle simulator.  Players program the logic to drive their mechs, including things like configuring it pre-match, communicating with teammates via player-defined protocols, and optimally finding, locking onto, and destroying their enemies.</div>
+          <div class="question-q">Q. Who is Uncanny Works?</div>
+          <div class="question-a blurb">A. We are a small two man independent game development team outside of Osaka, Japan.</div>
+          <div class="question-q">Q. What programming languages will I be able to program in?</div>
+          <div class="question-a blurb">A. Hopefully any language you possibly could! Our API communicates with protocol buffers over TCP, and we plan on creating and endorsing SDKs for every language people want to use.</div>
+          <div class="question-q">Q. What is the actual server written in?</div>
+          <div class="question-a blurb">A. We are writing the realtime backend game server component in Haskell. Our services are being written in Elixir.</div>
+          <div class="question-q">Q. What will the visual client be written in?</div>
+          <div class="question-a blurb">A. We will utilize Unity3d since we have a lot of prior experience with it.</div>
+          <div class="question-q">Q. I've never programmed before.  Will there be tutorials?</div>
+          <div class="question-a blurb">A. One of our primary goals is to help people new to programming learn everything they need to know in order to play our game.  Not only do we plan on writing first class documentation, but we'd like to include as many tutorials and guides as possible for as many languages as we can.</div>
+          <div class="question-q">Q. How will you stop people from cheating?</div>
+          <div class="question-a blurb">A. Player code will be executed inside CPU and memory constrained containers on our own server infrastructure.  Outside world communication will be disabled.  These containers (called <em>Slugs</em>) only allow communication with the core game server running the game instance itself.</div>
+          <div class="question-q">Q. How many players in the same game?</div>
+          <div class="question-a blurb">A. Currently we plan on trying 5v5 battles to see how it goes.  We could very easily increase or decrease this number over time.</div>
+          <div class="question-q">Q. Which game modes will be available?</div>
+          <div class="question-a blurb">A. The first official game mode will be Team Deathmatch.  Future versions will include Capture the Objective, Defend & Destroy, Deahtmatch, Arena, Duels, and whatever else we dream of.</div>
+          <div class="question-q">Q. What kind of ranked play system will be in place?</div>
+          <div class="question-a blurb">A. Assuming we attract a large enough player base, we'd really like to put an ELO-like ranking system in place for people interested in doing ranked competitive play.  Players would then compete for places in standard ladder style leagues, such as Bronze, Silver, Gold, etc.</div>
+          <div class="question-q">Q. Will there be clans/teams?</div>
+          <div class="question-a blurb">A. We would definitely like to allow players to create their own teams.</div>
+          <div class="question-q">Q. What does the game client let me do?</div>
+          <div class="question-a blurb">A. Initially the client will strictly be a game viewer so players can watch their matches in realtime.  We would also like to add a robot customization tester, a local game simulator for sandbox testing, and community features such as chat and forums.</div>
+      </div>
+	    <div id="footer">
+        <small>&copy;2014-2016 <a href="http://uncannyworks.com">Uncanny Works, LLC</a>. All rights reserved.</small></span>
+        <a href="https://twitter.com/uncannyworks" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+	      <a href="https://www.facebook.com/pages/Uncanny-Works-LLC/804720946235665" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
       </div>
     </div>
-	</div>
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<p class="pull-right"><small>&copy;2014-2015 <a href="http://uncannyworks.com">Uncanny Works, LLC</a>. All rights reserved.</small></p>
-			</div>
-		</div>
 	</div>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
