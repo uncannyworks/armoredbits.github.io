@@ -56,8 +56,10 @@ body {
 }
 
 #main-view {
-	min-height: 85vh;	
-  margin: 2em;
+    width: 1200px;
+	  min-height: : 85px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #main-content {
